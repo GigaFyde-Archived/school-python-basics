@@ -7,7 +7,9 @@ totalFlights = len(data)
 totalPassengers = 0
 
 for flight in data:
-    print(f"At {flight['arrival']} a {flight['airline']} flight arrived from the city of {flight['origin']} carrying {flight['passengers']} passengers")
+    print(
+        f"At {flight['arrival']} a {flight['airline']} flight arrived from the city of {flight['origin']} "
+        f"carrying "f"{flight['passengers']} passengers")
     totalPassengers += int(flight['passengers'])
 
 averagePassengers = totalPassengers / totalFlights
